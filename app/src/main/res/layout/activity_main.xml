@@ -23,14 +23,15 @@
         android:text="PrimaryColor" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="btnColorMatrix"
         android:text="MatrixColor" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="三生三世" />
+        android:onClick="btnPixelsEffect"
+        android:text="PixelsEffect" />
 
 </LinearLayout>

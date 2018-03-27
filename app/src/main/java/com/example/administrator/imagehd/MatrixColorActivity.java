@@ -9,6 +9,7 @@ import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.GridLayout;
@@ -70,7 +71,8 @@ public class MatrixColorActivity extends Activity {
 
     private void getMatrix() {
         for (int i = 0; i < 20; i++) {
-            mColorMatrix[i] = Float.valueOf(mEts[i].getText().toString());
+            String s = TextUtils.isEmpty(mEts[i].getText().toString()) ? "0" : mEts[i].getText().toString();
+            mColorMatrix[i] = Float.valueOf(s);
         }
     }
 
